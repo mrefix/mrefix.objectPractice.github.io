@@ -42,6 +42,6 @@ function rEllipse(x, y, w, h, depth, angle) {
         console.log(map(mouseX, 0, windowWidth, 0, 2 * PI));
         //I liked 4.19
         angle += map(mouseX, 0, windowWidth, 0, 2 * PI);
-        rEllipse(x, y, w * .8, h * .8, depth - 1, angle);
+        rEllipse(x, y, w * .2, h * .8, depth - 1, angle);
     }
 }
