@@ -19,7 +19,7 @@ function draw() {
     var eY = centerY + 60 * noise(n);
     fill(255);
     //draw the ellipse at the changing X position, and add noise to the Y to give it some jitter.
-    ellipse(iter, eY, 100, 100);
+    ellipse(iter, eY, 80, 80);
 
     rEllipse(centerX, centerY, 150, 150, 15, .52);
 
@@ -36,8 +36,8 @@ function rEllipse(x, y, w, h, depth, angle) {
 
     } else {
         ellipse(x, y, w, h);
-        x = x + w * .8 * sin(angle);
-        y = y + h * .8 * cos(angle);
+        x = x + w * .6 * sin(angle);
+        y = y + h * .6 * cos(angle);
         //angle += .68;
         console.log(map(mouseX, 0, windowWidth, 0, 2 * PI));
         //I liked 4.19
